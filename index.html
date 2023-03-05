@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+  <title>Frontend Mentor | Time tracking dashboard</title>
+
+</head>
+
+<body onload="interval('weekly')">
+  <main>
+    <div class="container">
+      <article class="nav-card">
+        <div class="profile-container">
+          <img src="images/image-jeremy.png" alt="profile picture">
+          <div>
+            <p class="profile-title">Report for</p>
+            <p class="profile-name">Jeremy Robson</p>
+          </div>
+        </div>
+        <nav>
+          <ul role="list">
+            <li onclick="interval(this.id)" id="daily">Daily</li>
+            <li class="active" onclick="interval(this.id)" id="weekly">Weekly</li>
+            <li onclick="interval(this.id)" id="monthly">Monthly</li>
+          </ul>
+        </nav>
+      </article>
+      <article class="card work">
+        <div class="subsection">
+          <div class="current">
+            <h3>Work</h3>
+            <p>0hrs</p>
+          </div>
+          <div class="previous">
+            <img src="images/icon-ellipsis.svg" alt="">
+            <p>Last Week - 0hrs</p>
+          </div>
+        </div>
+      </article>
+      <article class="card play">
+        <div class="subsection">
+          <div class="current">
+            <h3>Play</h3>
+            <p>0hrs</p>
+          </div>
+          <div class="previous">
+            <img src="images/icon-ellipsis.svg" alt="">
+            <p>Last Week - 0hrs</p>
+          </div>
+        </div>
+      </article>
+      <article class="card study">
+        <div class="subsection">
+          <div class="current">
+            <h3>Study</h3>
+            <p>0hrs</p>
+          </div>
+          <div class="previous">
+            <img src="images/icon-ellipsis.svg" alt="">
+            <p>Last Week - 0hrs</p>
+          </div>
+        </div>
+      </article>
+      <article class="card exercise">
+        <div class="subsection">
+          <div class="current">
+            <h3>Exercise</h3>
+            <p>0hrs</p>
+          </div>
+          <div class="previous">
+            <img src="images/icon-ellipsis.svg" alt="">
+            <p>Last Week - 0hrs</p>
+          </div>
+        </div>
+      </article>
+      <article class="card social">
+        <div class="subsection">
+          <div class="current">
+            <h3>Social</h3>
+            <p>0hrs</p>
+          </div>
+          <div class="previous">
+            <img src="images/icon-ellipsis.svg" alt="">
+            <p>Last Week - 0hrs</p>
+          </div>
+        </div>
+      </article>
+      <article class="card selfcare">
+        <div class="subsection">
+          <div class="current">
+            <h3>Self Care</h3>
+            <p>0hrs</p>
+          </div>
+          <div class="previous">
+            <img src="images/icon-ellipsis.svg" alt="">
+            <p>Last Week - 0hrs</p>
+          </div>
+        </div>
+      </article>
+    </div>
+  </main>
+
+</body>
+
+</html>
